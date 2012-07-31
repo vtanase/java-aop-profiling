@@ -1,0 +1,9 @@
+A Java AOP timer for classes that are annotated with @Service. Shows how long the execution of a method took in milliseconds.
+
+It utilizes Spring profiles. The profiling aspect is turned on only for the Spring profile named "diagnostic". This is achieved via command line options.
+
+To turn on profiling in pom.xml uncomment this line:
+<argument>-Dspring.profiles.active=diagnostic</argument>
+
+build with: mvn clean install
+run with: mvn exec:exec
